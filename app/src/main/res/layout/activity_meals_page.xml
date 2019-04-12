@@ -20,5 +20,27 @@
             android:text="Meals"
             android:textColor="#ffffff"
             android:textSize="50sp" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="How many meals did you eat today?"
+            android:textColor="@color/colorAccent" />
+
+        <EditText
+            android:id="@+id/numberOfMealsET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Number of Meals"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onSubmitButtonPressed"
+            android:text="Submit" />
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
