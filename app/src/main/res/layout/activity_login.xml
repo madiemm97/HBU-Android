@@ -16,8 +16,15 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:gravity="center"
             android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="125dp"
+                app:srcCompat="@drawable/imageedit_8_2177940927" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -55,14 +62,20 @@
 
             </LinearLayout>
 
-            <Button
-                android:id="@+id/logInButton"
-                android:layout_width="164dp"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
-                android:onClick="onLogInButtonPressed"
-                android:text="Log In"
-                android:textSize="18sp" />
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/logInButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|center_horizontal"
+                    android:onClick="onLogInButtonPressed"
+                    android:text="Log In"
+                    android:textSize="18sp" />
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -82,9 +95,9 @@
                     android:layout_width="165dp"
                     android:layout_height="wrap_content"
                     android:background="#00FFFFFF"
+                    android:clickable="true"
                     android:gravity="left|center_vertical"
                     android:onClick="onCreateAccountButtonPressed"
-                    android:clickable="true"
                     android:text="Sign Up!"
                     android:textColor="#1B4AD8" />
             </LinearLayout>

@@ -11,20 +11,23 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="match_parent"
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="161dp"
             android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:text="HBU"
-            android:textSize="36sp"
-            android:textStyle="bold"
-            app:fontFamily="sans-serif-black" />
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/imageedit_8_2177940927"
+            android:scaleType="center" />
 
         <Button
             android:id="@+id/button"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="95dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
             android:background="#cc3333"
             android:onClick="onMealsButtonPressed"
             android:text="Meals"
@@ -34,7 +37,10 @@
         <Button
             android:id="@+id/button2"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="95dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
             android:background="#929998"
             android:onClick="onSleepButtonPressed"
             android:text="Sleep"
@@ -44,7 +50,10 @@
         <Button
             android:id="@+id/button3"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="95dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
             android:background="#B9D7DB"
             android:onClick="onNotesButtonPressed"
             android:text="Notes"
@@ -54,7 +63,10 @@
         <Button
             android:id="@+id/button4"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="95dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
             android:background="#597997"
             android:onClick="onMedsButtonPressed"
             android:text="Meds"
@@ -64,7 +76,10 @@
         <Button
             android:id="@+id/button5"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="95dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
             android:background="#253651"
             android:onClick="onMindButtonPressed"
             android:text="Mind"
@@ -75,6 +90,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
             android:orientation="horizontal">
 
             <Button
