@@ -52,4 +52,10 @@ public class MainActivity extends AppCompatActivity
         Intent i = new Intent(this, MindPage.class);
         this.startActivity(i);
     }
+
+    public void onSettingsButtonPressed(View v)
+    {
+        Intent i = new Intent(this, Settings.class);
+        this.startActivity(i);
+    }
 }

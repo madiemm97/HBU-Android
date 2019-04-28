@@ -25,6 +25,8 @@ public class MealsPage extends AppCompatActivity
 
         Core.database = FirebaseDatabase.getInstance();
         //Core.mealsRef = FirebaseDatabase.getInstance().getReference();
+        //db.getreference(profiles).child(abc123).setValue("mike")
+        //.push creates a unique identifier
         Core.mealsRef = database.getReference("meals");
         this.myself = this;
 
