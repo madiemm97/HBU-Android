@@ -29,7 +29,7 @@ public class SleepPage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sleep_page);
 
-        this.sleep1 = (Button)(findViewById(R.id.sleep1));
+        this.sleep1 = (Button)findViewById(R.id.sleep1);
         this.sleep2 = (Button)(findViewById(R.id.sleep2));
         this.sleep3 = (Button)(findViewById(R.id.sleep3));
         this.sleep4 = (Button)(findViewById(R.id.sleep4));
