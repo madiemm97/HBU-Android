@@ -60,4 +60,16 @@ public class MainActivity extends AppCompatActivity
         Intent i = new Intent(this, Settings.class);
         this.startActivity(i);
     }
+
+    public void onInformationButtonPressed(View v)
+    {
+        Intent i = new Intent(this, Information.class);
+        this.startActivity(i);
+    }
+
+    public void onHotlineButtonPressed(View v)
+    {
+        Intent i = new Intent(this, Hotline.class);
+        this.startActivity(i);
+    }
 }

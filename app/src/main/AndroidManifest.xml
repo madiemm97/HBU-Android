@@ -9,23 +9,29 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Settings"></activity>
+        <activity android:name=".Hotline"></activity>
+        <activity android:name=".Information" />
+        <activity android:name=".NotesRandomActivity" />
+        <activity android:name=".NotesGratitudeActivity" />
+        <activity android:name=".NotesGoalsActivity" />
+        <activity android:name=".NotesImproveActivity" />
+        <activity android:name=".NotesPrideActivity" />
+        <activity android:name=".NotesMindfulnessActivity" />
+        <activity android:name=".Settings" />
         <activity android:name=".SignUp" />
-        <activity android:name=".MainActivity" />
+        <activity android:name=".Login" />
         <activity android:name=".MealsPage" />
         <activity android:name=".MindPage" />
         <activity android:name=".MedsPage" />
         <activity android:name=".NotesPage" />
         <activity android:name=".SleepPage" />
-        <activity android:name=".Login">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
-
     </application>
 
 </manifest>

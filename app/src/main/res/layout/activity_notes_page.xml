@@ -21,34 +21,78 @@
             android:textColor="#ffffff"
             android:textSize="50sp" />
 
-        <TextView
-            android:id="@+id/textView8"
+        <View
+            android:id="@+id/divider"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:paddingBottom="10dp"
-            android:text="How do you practice mindfulness?"
-            android:textColor="@android:color/white"
-            android:textSize="18sp" />
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="#ffffff" />
 
-        <EditText
-            android:id="@+id/editText"
+        <Button
+            android:id="@+id/mindfulnessButton"
             android:layout_width="match_parent"
-            android:layout_height="72dp"
-            android:background="@android:color/white"
-            android:ems="10"
-            android:inputType="textMultiLine"
-            android:paddingBottom="0dp" />
+            android:layout_height="65dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:background="#ffffff"
+            android:onClick="onMindfulnessButtonPressed"
+            android:text="How I Practice Mindfulness..." />
 
-        <TextView
-            android:id="@+id/textView9"
+        <Button
+            android:id="@+id/prideButton"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp"
-            android:text="How do you practice mindfulness?"
-            android:textColor="@android:color/white"
-            android:textSize="18sp" />
+            android:layout_height="65dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:background="#ffffff"
+            android:onClick="onPrideButtonPressed"
+            android:text="Things I Am Proud Of..." />
+
+        <Button
+            android:id="@+id/improveButton"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:background="#ffffff"
+            android:onClick="onImproveButtonPressed"
+            android:text="Things I Would Like to Improve..." />
+
+        <Button
+            android:id="@+id/goalsButton"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:background="#ffffff"
+            android:onClick="onGoalsButtonPressed"
+            android:text="Daily Goals" />
+
+        <Button
+            android:id="@+id/gratitudeButton"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:background="#ffffff"
+            android:onClick="onGratitudeButtonPressed"
+            android:text="Gratitude" />
+
+        <Button
+            android:id="@+id/randomButton"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:background="#ffffff"
+            android:onClick="onRandomButtonPressed"
+            android:text="Random" />
+
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
