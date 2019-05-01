@@ -24,7 +24,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="25dp"
                 android:layout_marginBottom="125dp"
-                app:srcCompat="@drawable/imageedit_8_2177940927" />
+                 />
 
             <LinearLayout
                 android:layout_width="match_parent"

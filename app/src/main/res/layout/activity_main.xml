@@ -18,7 +18,6 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
-            android:background="@drawable/imageedit_8_2177940927"
             android:scaleType="center" />
 
         <Button
