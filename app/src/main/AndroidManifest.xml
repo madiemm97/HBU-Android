@@ -22,13 +22,13 @@
         <activity android:name=".NotesMindfulnessActivity" />
         <activity android:name=".Settings" />
         <activity android:name=".SignUp" />
-        <activity android:name=".MainActivity" />
+        <activity android:name=".Login" />
         <activity android:name=".MealsPage" />
         <activity android:name=".MindPage" />
         <activity android:name=".MedsPage" />
         <activity android:name=".NotesPage" />
         <activity android:name=".SleepPage" />
-        <activity android:name=".Login">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -33,7 +33,7 @@ public class NotesGratitudeActivity extends AppCompatActivity
 
         Core.database = FirebaseDatabase.getInstance();
         DatabaseReference notesRef = database.getReference("notes").child("gratitude");
-
+        //.push.setValue() gives unique
 
         this.gratitudeLV.setClickable(true);
         this.gratitudeLV.setOnItemClickListener(new AdapterView.OnItemClickListener()

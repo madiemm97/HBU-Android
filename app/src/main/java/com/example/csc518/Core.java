@@ -10,6 +10,8 @@ import java.util.List;
 public class Core
 {
     public static FirebaseDatabase database;
+
+    public static DatabaseReference sleepDataRef;
     public static DatabaseReference mDatabase;
     public static DatabaseReference mealsRef;
     public static FirebaseUser currentUser;
