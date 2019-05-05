@@ -73,55 +73,131 @@ public class MealsPage extends AppCompatActivity
 
     public void mealNumOnePressed(View v)
     {
-        mealNumOne.setBackgroundColor(Color.WHITE);
+        mealNumOne.setTextColor(Color.RED);
+        mealNumTwo.setTextColor(Color.BLACK);
+        mealNumThree.setTextColor(Color.BLACK);
+        mealNumFour.setTextColor(Color.BLACK);
+        mealNumFive.setTextColor(Color.BLACK);
+        mealNumSix.setTextColor(Color.BLACK);
+        mealNumSeven.setTextColor(Color.BLACK);
+        mealNumEight.setTextColor(Color.BLACK);
+        mealNumNine.setTextColor(Color.BLACK);
+
+
+
+
         numberOfMeals = "1";
     }
 
     public void mealNumTwoPressed(View v)
     {
-        mealNumTwo.setBackgroundColor(Color.WHITE);
+        mealNumOne.setTextColor(Color.BLACK);
+        mealNumTwo.setTextColor(Color.RED);
+        mealNumThree.setTextColor(Color.BLACK);
+        mealNumFour.setTextColor(Color.BLACK);
+        mealNumFive.setTextColor(Color.BLACK);
+        mealNumSix.setTextColor(Color.BLACK);
+        mealNumSeven.setTextColor(Color.BLACK);
+        mealNumEight.setTextColor(Color.BLACK);
+        mealNumNine.setTextColor(Color.BLACK);
         numberOfMeals = "2";
     }
 
     public void mealNumThreePressed(View v)
     {
-        mealNumThree.setBackgroundColor(Color.WHITE);
+        mealNumOne.setTextColor(Color.BLACK);
+        mealNumTwo.setTextColor(Color.BLACK);
+        mealNumThree.setTextColor(Color.RED);
+        mealNumFour.setTextColor(Color.BLACK);
+        mealNumFive.setTextColor(Color.BLACK);
+        mealNumSix.setTextColor(Color.BLACK);
+        mealNumSeven.setTextColor(Color.BLACK);
+        mealNumEight.setTextColor(Color.BLACK);
+        mealNumNine.setTextColor(Color.BLACK);
         numberOfMeals = "3";
     }
 
     public void mealNumFourPressed(View v)
     {
-        mealNumFour.setBackgroundColor(Color.WHITE);
+        mealNumOne.setTextColor(Color.BLACK);
+        mealNumTwo.setTextColor(Color.BLACK);
+        mealNumThree.setTextColor(Color.BLACK);
+        mealNumFour.setTextColor(Color.RED);
+        mealNumFive.setTextColor(Color.BLACK);
+        mealNumSix.setTextColor(Color.BLACK);
+        mealNumSeven.setTextColor(Color.BLACK);
+        mealNumEight.setTextColor(Color.BLACK);
+        mealNumNine.setTextColor(Color.BLACK);
         numberOfMeals = "4";
     }
 
     public void mealNumFivePressed(View v)
     {
-        mealNumFive.setBackgroundColor(Color.WHITE);
+        mealNumOne.setTextColor(Color.BLACK);
+        mealNumTwo.setTextColor(Color.BLACK);
+        mealNumThree.setTextColor(Color.BLACK);
+        mealNumFour.setTextColor(Color.BLACK);
+        mealNumFive.setTextColor(Color.RED);
+        mealNumSix.setTextColor(Color.BLACK);
+        mealNumSeven.setTextColor(Color.BLACK);
+        mealNumEight.setTextColor(Color.BLACK);
+        mealNumNine.setTextColor(Color.BLACK);
         numberOfMeals = "5";
     }
 
     public void mealNumSixPressed(View v)
     {
-        mealNumSix.setBackgroundColor(Color.WHITE);
+        mealNumOne.setTextColor(Color.BLACK);
+        mealNumTwo.setTextColor(Color.BLACK);
+        mealNumThree.setTextColor(Color.BLACK);
+        mealNumFour.setTextColor(Color.BLACK);
+        mealNumFive.setTextColor(Color.BLACK);
+        mealNumSix.setTextColor(Color.RED);
+        mealNumSeven.setTextColor(Color.BLACK);
+        mealNumEight.setTextColor(Color.BLACK);
+        mealNumNine.setTextColor(Color.BLACK);
         numberOfMeals = "6";
     }
 
     public void mealNumSevenPressed(View v)
     {
-        mealNumSeven.setBackgroundColor(Color.WHITE);
+        mealNumOne.setTextColor(Color.BLACK);
+        mealNumTwo.setTextColor(Color.BLACK);
+        mealNumThree.setTextColor(Color.BLACK);
+        mealNumFour.setTextColor(Color.BLACK);
+        mealNumFive.setTextColor(Color.BLACK);
+        mealNumSix.setTextColor(Color.BLACK);
+        mealNumSeven.setTextColor(Color.RED);
+        mealNumEight.setTextColor(Color.BLACK);
+        mealNumNine.setTextColor(Color.BLACK);
         numberOfMeals = "7";
     }
 
     public void mealNumEightPressed(View v)
     {
-        mealNumEight.setBackgroundColor(Color.WHITE);
+        mealNumOne.setTextColor(Color.BLACK);
+        mealNumTwo.setTextColor(Color.BLACK);
+        mealNumThree.setTextColor(Color.BLACK);
+        mealNumFour.setTextColor(Color.BLACK);
+        mealNumFive.setTextColor(Color.BLACK);
+        mealNumSix.setTextColor(Color.BLACK);
+        mealNumSeven.setTextColor(Color.BLACK);
+        mealNumEight.setTextColor(Color.RED);
+        mealNumNine.setTextColor(Color.BLACK);
         numberOfMeals = "8";
     }
 
     public void mealNumNinePressed(View v)
     {
-        mealNumNine.setBackgroundColor(Color.WHITE);
+        mealNumOne.setTextColor(Color.BLACK);
+        mealNumTwo.setTextColor(Color.BLACK);
+        mealNumThree.setTextColor(Color.BLACK);
+        mealNumFour.setTextColor(Color.BLACK);
+        mealNumFive.setTextColor(Color.BLACK);
+        mealNumSix.setTextColor(Color.BLACK);
+        mealNumSeven.setTextColor(Color.BLACK);
+        mealNumEight.setTextColor(Color.BLACK);
+        mealNumNine.setTextColor(Color.RED);
         numberOfMeals = "9";
     }
 
