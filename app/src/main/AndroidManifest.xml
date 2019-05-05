@@ -9,10 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SleepPage2"></activity>
+        <activity android:name=".MedsPage2"></activity>
+        <activity android:name=".MindPage4" />
+        <activity android:name=".MindPage3" />
+        <activity android:name=".MindPage2" />
+        <activity android:name=".SleepPage2" />
         <activity android:name=".MealsPage3" />
         <activity android:name=".MealsPage2" />
-        <activity android:name=".Hotline"></activity>
+        <activity android:name=".Hotline" />
         <activity android:name=".Information" />
         <activity android:name=".NotesRandomActivity" />
         <activity android:name=".NotesGratitudeActivity" />
