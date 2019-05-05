@@ -19,7 +19,7 @@ public class SleepPage extends AppCompatActivity {
     private Button sleep8;
     private Button sleep9ormore;
     private int totalSleep;
-    public Button submitButton;
+    private Button submitButton;
 
 
 

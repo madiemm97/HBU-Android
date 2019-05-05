@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MindPage">
+    tools:context=".MindPage2">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -40,18 +40,11 @@
                     android:text="_________________________________________________________"
                     android:textColor="@android:color/white" />
 
-                <Button
-                    android:id="@+id/generateButton"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:onClick="onGenerateButtonPressed"
-                    android:text="START" />
-
                 <TextView
                     android:id="@+id/textView13"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Remember this word:"
+                    android:text="Pick which describes your mood best:"
                     android:textColor="@android:color/white"
                     android:textSize="30sp" />
 
@@ -76,22 +69,76 @@
                             android:layout_weight="1"
                             android:orientation="horizontal">
 
-                            <TextView
-                                android:id="@+id/randomWordTextView"
+                            <Button
+                                android:id="@+id/happyButton"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="...."
-                                android:textColor="@android:color/white"
-                                android:textSize="36sp" />
+                                android:background="@drawable/round_button"
+                                android:text="Happy :)" />
+
+                            <LinearLayout
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/pleasedButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/round_button"
+
+                                android:text="Pleased :]" />
                         </LinearLayout>
 
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:orientation="horizontal"></LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="125dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="125dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/indifferentButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_button"
+
+                            android:text="Indifferent :|" />
 
                         <LinearLayout
                             android:layout_width="10dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:orientation="horizontal"></LinearLayout>
+                            android:orientation="horizontal">
+
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/notgreatButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_button"
+
+                            android:text="Not Great :/" />
 
                     </LinearLayout>
                 </LinearLayout>
@@ -117,53 +164,31 @@
                             android:layout_weight="1"
                             android:orientation="horizontal">
 
-                            <TextView
-                                android:id="@+id/textView40"
+                            <Button
+                                android:id="@+id/terribleButton"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="Remember this shape:"
-                                android:textColor="@android:color/white"
-                                android:textSize="30sp" />
-                        </LinearLayout>
+                                android:background="@drawable/round_button"
 
-                    </LinearLayout>
-                </LinearLayout>
+                                android:text="Terrible :(" />
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="10dp"
-                    android:orientation="horizontal"></LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="125dp"
-                    android:orientation="horizontal">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="125dp"
-                        android:orientation="horizontal">
-
-                        <LinearLayout
-                            android:layout_width="10dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:orientation="horizontal">
-
-                            <ImageView
-                                android:id="@+id/imageView4"
-                                android:layout_width="50dp"
-                                android:layout_height="50dp"
+                            <LinearLayout
+                                android:layout_width="10dp"
+                                android:layout_height="match_parent"
                                 android:layout_weight="1"
-                                app:srcCompat="@android:drawable/arrow_down_float" />
+                                android:orientation="horizontal"></LinearLayout>
+
+                            <Button
+                                android:id="@+id/worstdayeverButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/round_button"
+
+                                android:text="Worst day ever >:(" />
                         </LinearLayout>
 
-                        <LinearLayout
-                            android:layout_width="10dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:orientation="horizontal"></LinearLayout>
                     </LinearLayout>
                 </LinearLayout>
 
@@ -188,7 +213,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:onClick="onNextButton1"
+                            android:onClick="onNextButtonPressed"
                             android:text="Next" />
                     </LinearLayout>
 
