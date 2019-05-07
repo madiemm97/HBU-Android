@@ -40,7 +40,7 @@ public class NotesGoalsActivity extends AppCompatActivity
         this.goalLV = (ListView)findViewById(R.id.goalsLV);
 
         Core.database = FirebaseDatabase.getInstance();
-        DatabaseReference notesRef = database.getReference("notes").child("goals");
+        DatabaseReference goalsRef = Core.database.getReference("Notes");
 
 
         this.goalLV.setClickable(true);
@@ -62,6 +62,16 @@ public class NotesGoalsActivity extends AppCompatActivity
         String goal = this.goalET.getText().toString();
 
         Core.listOfGoals.add(goal);
+        Core.listOfNotes.add(goal);
+
+        GettingCurrentDate date = new GettingCurrentDate();
+        String currDate = date.getCurrentDate();
+
+        GoalObject goalObject = new GoalObject(currDate, goal);
+
+        DatabaseReference goalsRef = Core.database.getReference("Notes");
+        Core.goalsRef.child("Goals").child("abc123").push().setValue(goalObject);
+
 
         // This is the array adapter, it takes the context of the activity as a
         // first parameter, the type of list view as a second parameter and your

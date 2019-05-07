@@ -50,4 +50,10 @@ public class NotesPage extends AppCompatActivity
         Intent i = new Intent(this, NotesRandomActivity.class);
         this.startActivity(i);
     }
+
+    public void onAllNotesButtonPressed(View v)
+    {
+        Intent i = new Intent(this, NotesAll.class);
+        this.startActivity(i);
+    }
 }

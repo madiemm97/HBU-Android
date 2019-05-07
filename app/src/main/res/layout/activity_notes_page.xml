@@ -94,5 +94,16 @@
             android:onClick="onRandomButtonPressed"
             android:text="Random" />
 
+        <Button
+            android:id="@+id/randomButton2"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:background="#ffffff"
+            android:onClick="onAllNotesButtonPressed"
+            android:text="All of Your Notes" />
+
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

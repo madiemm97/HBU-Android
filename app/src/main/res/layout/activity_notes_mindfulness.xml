@@ -120,6 +120,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:background="#253651"
+                android:onClick="onSaveButtonPressed"
                 android:text="Save Answers"
                 android:textColor="@android:color/white"
                 android:textSize="18sp" />

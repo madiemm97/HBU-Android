@@ -42,7 +42,7 @@ public class SleepPage extends AppCompatActivity {
         this.sleep9ormore = (Button)(findViewById(R.id.sleep9ormore));
         this.submitButton = (Button)(findViewById(R.id.submitButton));
 
-        Core.sleepDataRef = FirebaseDatabase.getInstance().getReference().child("Sleep").child("UID"); //.child("UID").child("Date").child("Number of Meals");
+        //Core.sleepDataRef = FirebaseDatabase.getInstance().getReference().child("Sleep").child("UID"); //.child("UID").child("Date").child("Number of Meals");
 
 
     }
@@ -113,15 +113,13 @@ public class SleepPage extends AppCompatActivity {
 
     public void onSubmitButtonPressed(View v)
     {
-        Intent i = new Intent(this, SleepPage.class);
+        Intent i = new Intent(this, SleepPage2.class);
         System.out.println(totalSleep);
-
-        GettingCurrentDate date = new GettingCurrentDate();
-        String currentDate = date.getCurrentDate();
+        i.putExtra("totalSleep", totalSleep);
 
         // This will set the total sleep a person slept to the current date and UID
-        Core.sleepDataRef.child(Core.currentUser.getUid()).child(currentDate).setValue(totalSleep);
-        //Core.sleepDataRef.child(Core.currentUser.getUid()).push().setValue();
+        //Core.sleepDataRef.child(Core.currentUser.getUid()).push().setValue(totalSleep);
+
         this.startActivity(i);
 
     }
