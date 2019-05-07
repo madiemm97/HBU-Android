@@ -108,7 +108,7 @@ public class SleepPage extends AppCompatActivity {
 
     public void onSubmitButtonPressed(View v)
     {
-        Intent i = new Intent(this, SleepPage.class);
+        Intent i = new Intent(this, SleepPage2.class);
         this.startActivity(i);
         System.out.println(totalSleep);
     }
