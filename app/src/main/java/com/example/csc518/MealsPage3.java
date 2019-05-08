@@ -8,6 +8,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.google.firebase.database.FirebaseDatabase;
+
+import java.util.ArrayList;
+
 public class MealsPage3 extends AppCompatActivity {
 
 
@@ -24,7 +28,7 @@ public class MealsPage3 extends AppCompatActivity {
     private int totalDrinks;
     private MealsPage3 MealsPage3Activity;
 
-
+    String numOfMeals;
 
 
     @Override
@@ -45,7 +49,9 @@ public class MealsPage3 extends AppCompatActivity {
         this.drink9ormore = (Button)findViewById(R.id.drink9ormore);
         this.MealsPage3Activity = this;
 
+        Core.mealsRef = FirebaseDatabase.getInstance().getReference().child("Meals");
 
+        this.numOfMeals = getIntent().getExtras().getString("numOfMeals");
 
     }
 
@@ -113,13 +119,30 @@ public class MealsPage3 extends AppCompatActivity {
     public void submitButtonPressed(View v)
     {
         Intent i = new Intent(this, MainActivity.class);
-        this.startActivity(i);
         System.out.println(totalDrinks);
+
         if(totalDrinks > 2)
         {
             Toast.makeText(MealsPage3Activity, "Make sure you wait a while to take your meds!", Toast.LENGTH_LONG).show();
 
         }
+
+        ArrayList<String> whileEating = new ArrayList<>();
+        whileEating = getIntent().getExtras().getStringArrayList("whileEating");
+        System.out.println(numOfMeals);
+
+
+        GettingCurrentDate date = new GettingCurrentDate();
+        String currDate = date.getCurrentDate();
+        MealsObject mealsObject = new MealsObject(currDate, totalDrinks, numOfMeals, whileEating);
+
+        //still need to store object in database
+        //change abc123 to be Core.currentUser.getUID().push().setValue(sleepObject);
+        Core.mealsRef.child("abc123").push().setValue(mealsObject);
+        //.child(this key) instead of .push() when we are editing
+
+        this.startActivity(i);
+
 
     }
 

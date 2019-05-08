@@ -9,9 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MindPage7"></activity>
-        <activity android:name=".MindPage6" />
-        <activity android:name=".MindPage5" />
+        <activity android:name=".NotesAll"></activity>
         <activity android:name=".MedsPage2" />
         <activity android:name=".MindPage4" />
         <activity android:name=".MindPage3" />

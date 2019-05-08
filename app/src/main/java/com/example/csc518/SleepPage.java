@@ -109,8 +109,13 @@ public class SleepPage extends AppCompatActivity {
     public void onSubmitButtonPressed(View v)
     {
         Intent i = new Intent(this, SleepPage2.class);
-        this.startActivity(i);
         System.out.println(totalSleep);
+        i.putExtra("totalSleep", totalSleep);
+
+        // This will set the total sleep a person slept to the current date and UID
+        //Core.sleepDataRef.child(Core.currentUser.getUid()).push().setValue(totalSleep);
+
+        this.startActivity(i);
     }
 
 

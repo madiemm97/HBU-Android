@@ -55,6 +55,8 @@ public class NotesRandomActivity extends AppCompatActivity
         // you already have yours).
 
         Core.listOfRandomThings.add(randomNote);
+        Core.listOfNotes.add(randomNote);
+
 
         // This is the array adapter, it takes the context of the activity as a
         // first parameter, the type of list view as a second parameter and your

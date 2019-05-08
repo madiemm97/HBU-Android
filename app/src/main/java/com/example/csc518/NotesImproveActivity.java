@@ -1,5 +1,6 @@
 package com.example.csc518;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -21,6 +22,7 @@ public class NotesImproveActivity extends AppCompatActivity
         this.thing4 = (EditText)findViewById(R.id.thing4);
         this.thing5 = (EditText)findViewById(R.id.thing5);
 
+
         //populate current fields from information saved in database
 
     }
@@ -28,5 +30,28 @@ public class NotesImproveActivity extends AppCompatActivity
     public void onSaveButtonPressed(View v)
     {
         //save to the database
+        if(!this.thing1.equals(""))
+        {
+            Core.listOfNotes.add("What I am want to improve on: " + thing1.getText().toString());
+        }
+        if(!this.thing2.equals(""))
+        {
+            Core.listOfNotes.add("What I am want to improve on: " + thing2.getText().toString());
+        }
+        if(!this.thing3.equals(""))
+        {
+            Core.listOfNotes.add("What I am want to improve on: " + thing3.getText().toString());
+        }
+        if(!this.thing4.equals(""))
+        {
+            Core.listOfNotes.add("What I am want to improve on: " + thing4.getText().toString());
+        }
+        if(!this.thing5.equals(""))
+        {
+            Core.listOfNotes.add("What I am want to improve on: " + thing5.getText().toString());
+        }
+
+        Intent i = new Intent(this, NotesPage.class);
+        this.startActivity(i);
     }
 }

@@ -32,7 +32,6 @@ public class MealsPage extends AppCompatActivity
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        System.out.println("***Made it");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_meals_page);
 
@@ -205,10 +204,13 @@ public class MealsPage extends AppCompatActivity
     {
         //Core.mealsRef.setValue(numberOfMealsET.getText().toString());
         Intent i = new Intent(this, MealsPage2.class);
-        this.startActivity(i);
-        System.out.println(numberOfMeals);
+        System.out.println("***" + numberOfMeals);
+        i.putExtra("numberOfMeals", numberOfMeals);
+        //i.putExtra("numberOfMeals", numberOfMeals);
         //set numberOfMeals to firebase
         System.out.println("*** reached button");
         //Core.mealsRef.addListenerForSingleValueEvent();
+        this.startActivity(i);
+
     }
 }
