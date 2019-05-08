@@ -28,7 +28,7 @@ public class NotesPrideActivity extends AppCompatActivity
         //populate current fields from information saved in database
 
         Core.database = FirebaseDatabase.getInstance();
-        DatabaseReference goalsRef = Core.database.getReference("Notes");
+        Core.goalsRef = Core.database.getReference("Notes");
 
 
     }
@@ -78,8 +78,6 @@ public class NotesPrideActivity extends AppCompatActivity
             GoalObject goalObject4 = new GoalObject(currDate, thing5.getText().toString());
             Core.goalsRef.child("Things To Be Proud Of").child("abc123").push().setValue(goalObject4);
         }
-
-        Core.goalsRef.child("Things To Be Proud Of").child("abc123").push().setValue("You made it");
 
 
         Intent i = new Intent(this, NotesPage.class);

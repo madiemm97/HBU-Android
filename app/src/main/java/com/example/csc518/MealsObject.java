@@ -6,7 +6,7 @@ import java.util.ArrayList;
 public class MealsObject implements Serializable
 {
     public int numOfDrinks;
-    public String numOfMeals;
+    public int numOfMeals;
     public String date;
     public ArrayList<String> whileEating;
 
@@ -15,7 +15,7 @@ public class MealsObject implements Serializable
 
     }
 
-    public MealsObject(String date, int numOfDrinks, String numOfMeals, ArrayList<String> whileEating)
+    public MealsObject(String date, int numOfDrinks, int numOfMeals, ArrayList<String> whileEating)
     {
         this.date = date;
         this.numOfDrinks = numOfDrinks;

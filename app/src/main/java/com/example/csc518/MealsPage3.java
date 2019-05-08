@@ -28,7 +28,7 @@ public class MealsPage3 extends AppCompatActivity {
     private int totalDrinks;
     private MealsPage3 MealsPage3Activity;
 
-    String numOfMeals;
+    private int numOfMeals;
 
 
     @Override
@@ -51,7 +51,7 @@ public class MealsPage3 extends AppCompatActivity {
 
         Core.mealsRef = FirebaseDatabase.getInstance().getReference().child("Meals");
 
-        this.numOfMeals = getIntent().getExtras().getString("numOfMeals");
+        this.numOfMeals = getIntent().getExtras().getInt("numberOfMeals");
 
     }
 
@@ -129,14 +129,14 @@ public class MealsPage3 extends AppCompatActivity {
 
         ArrayList<String> whileEating = new ArrayList<>();
         whileEating = getIntent().getExtras().getStringArrayList("whileEating");
-        System.out.println(numOfMeals);
+        System.out.println("***" + numOfMeals);
 
 
         GettingCurrentDate date = new GettingCurrentDate();
         String currDate = date.getCurrentDate();
+
         MealsObject mealsObject = new MealsObject(currDate, totalDrinks, numOfMeals, whileEating);
 
-        //still need to store object in database
         //change abc123 to be Core.currentUser.getUID().push().setValue(sleepObject);
         Core.mealsRef.child("abc123").push().setValue(mealsObject);
         //.child(this key) instead of .push() when we are editing

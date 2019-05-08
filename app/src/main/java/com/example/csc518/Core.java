@@ -15,10 +15,14 @@ public class Core
     public static DatabaseReference mealsRef;
     public static DatabaseReference mindfulnessRef;
     public static DatabaseReference goalsRef;
+    public static DatabaseReference notesRandomRef;
+    public static DatabaseReference gratefulnessRef;
+    public static DatabaseReference improvementsRef;
     public static FirebaseUser currentUser;
     public static String fName, lName;
     //public static DatabaseReference loyaltyProgramRef;
 
+    public static List<String> listOfImprovements = new ArrayList<>();
     public static List<String> listOfGoals = new ArrayList<String>();
     public static List<String> listOfGratitude = new ArrayList<String>();
     public static List<String> listOfRandomThings = new ArrayList<String>();

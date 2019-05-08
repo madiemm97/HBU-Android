@@ -30,9 +30,8 @@ public class NotesGratitudeActivity extends AppCompatActivity
         this.gratitudeLV = (ListView)findViewById(R.id.gratitudeLV);
         this.addButton = (Button)findViewById(R.id.addButton);
 
-
         Core.database = FirebaseDatabase.getInstance();
-        DatabaseReference notesRef = database.getReference("notes").child("gratitude");
+        Core.gratefulnessRef = FirebaseDatabase.getInstance().getReference("Notes");
         //.push.setValue() gives unique
 
         this.gratitudeLV.setClickable(true);
@@ -53,11 +52,14 @@ public class NotesGratitudeActivity extends AppCompatActivity
     {
         String goal = this.gratitudeET.getText().toString();
 
-        // Instanciating an array list (you don't need to do this,
-        // you already have yours).
-
         Core.listOfGratitude.add(goal);
         Core.listOfNotes.add("I'm grateful for: " + goal);
+
+        GettingCurrentDate date = new GettingCurrentDate();
+        String currDate = date.getCurrentDate();
+
+        GoalObject goalObject = new GoalObject(currDate, goal);
+        Core.gratefulnessRef.child("Gratitude").child("abc123").push().setValue(goalObject);
 
 
         // This is the array adapter, it takes the context of the activity as a

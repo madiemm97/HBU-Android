@@ -33,7 +33,7 @@ public class NotesGoalsActivity extends AppCompatActivity
         this.goalLV = (ListView)findViewById(R.id.medsLV);
 
         Core.database = FirebaseDatabase.getInstance();
-        DatabaseReference goalsRef = Core.database.getReference("Notes");
+        Core.goalsRef = FirebaseDatabase.getInstance().getReference("Notes");
 
 
         this.goalLV.setClickable(true);
@@ -62,7 +62,8 @@ public class NotesGoalsActivity extends AppCompatActivity
 
         GoalObject goalObject = new GoalObject(currDate, goal);
 
-        DatabaseReference goalsRef = Core.database.getReference("Notes");
+//        DatabaseReference goalsRef = Core.database.getReference("Notes");
+
         Core.goalsRef.child("Goals").child("abc123").push().setValue(goalObject);
 
 
