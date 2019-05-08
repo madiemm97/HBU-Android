@@ -266,12 +266,12 @@
                         android:orientation="horizontal">
 
                         <Button
-                            android:id="@+id/allDoneButton"
+                            android:id="@+id/nextPageMP4Button"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:background="#00FFFFFF"
-                            android:onClick="onNextButtonPressed"
+                            android:onClick="onNextButtonPressedMP4"
                             android:text="Next"
                             android:textColor="@android:color/white" />
                     </LinearLayout>

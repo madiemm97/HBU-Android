@@ -45,64 +45,133 @@ public class SleepPage extends AppCompatActivity {
 
     public void onSleep1ButtonPressed(View v)
     {
-        sleep1.setBackgroundColor(Color.GRAY);
+        sleep1.setTextColor(Color.RED);
+        sleep2.setTextColor(Color.BLACK);
+        sleep3.setTextColor(Color.BLACK);
+        sleep4.setTextColor(Color.BLACK);
+        sleep5.setTextColor(Color.BLACK);
+        sleep6.setTextColor(Color.BLACK);
+        sleep7.setTextColor(Color.BLACK);
+        sleep8.setTextColor(Color.BLACK);
+        sleep9ormore.setTextColor(Color.BLACK);
+
+
+
 
         totalSleep = 1;
     }
 
     public void onSleep2ButtonPressed(View v)
     {
-        sleep2.setBackgroundColor(Color.GRAY);
+        sleep1.setTextColor(Color.BLACK);
+        sleep2.setTextColor(Color.RED);
+        sleep3.setTextColor(Color.BLACK);
+        sleep4.setTextColor(Color.BLACK);
+        sleep5.setTextColor(Color.BLACK);
+        sleep6.setTextColor(Color.BLACK);
+        sleep7.setTextColor(Color.BLACK);
+        sleep8.setTextColor(Color.BLACK);
+        sleep9ormore.setTextColor(Color.BLACK);
 
         totalSleep = 2;
     }
 
     public void onSleep3ButtonPressed(View v)
     {
-        sleep3.setBackgroundColor(Color.GRAY);
-
+        sleep1.setTextColor(Color.BLACK);
+        sleep2.setTextColor(Color.BLACK);
+        sleep3.setTextColor(Color.RED);
+        sleep4.setTextColor(Color.BLACK);
+        sleep5.setTextColor(Color.BLACK);
+        sleep6.setTextColor(Color.BLACK);
+        sleep7.setTextColor(Color.BLACK);
+        sleep8.setTextColor(Color.BLACK);
+        sleep9ormore.setTextColor(Color.BLACK);
         totalSleep = 3;
     }
 
     public void onSleep4ButtonPressed(View v)
     {
-        sleep4.setBackgroundColor(Color.GRAY);
-
+        sleep1.setTextColor(Color.BLACK);
+        sleep2.setTextColor(Color.BLACK);
+        sleep3.setTextColor(Color.BLACK);
+        sleep4.setTextColor(Color.RED);
+        sleep5.setTextColor(Color.BLACK);
+        sleep6.setTextColor(Color.BLACK);
+        sleep7.setTextColor(Color.BLACK);
+        sleep8.setTextColor(Color.BLACK);
+        sleep9ormore.setTextColor(Color.BLACK);
         totalSleep = 4;
     }
 
     public void onSleep5ButtonPressed(View v)
-    {
-        sleep5.setBackgroundColor(Color.GRAY);
+    { sleep1.setTextColor(Color.BLACK);
+        sleep2.setTextColor(Color.BLACK);
+        sleep3.setTextColor(Color.BLACK);
+        sleep4.setTextColor(Color.BLACK);
+        sleep5.setTextColor(Color.RED);
+        sleep6.setTextColor(Color.BLACK);
+        sleep7.setTextColor(Color.BLACK);
+        sleep8.setTextColor(Color.BLACK);
+        sleep9ormore.setTextColor(Color.BLACK);sleep5.setBackgroundColor(Color.GRAY);
 
         totalSleep = 5;
     }
 
     public void onSleep6ButtonPressed(View v)
     {
-        sleep6.setBackgroundColor(Color.GRAY);
-
+        sleep1.setTextColor(Color.BLACK);
+        sleep2.setTextColor(Color.BLACK);
+        sleep3.setTextColor(Color.BLACK);
+        sleep4.setTextColor(Color.BLACK);
+        sleep5.setTextColor(Color.BLACK);
+        sleep6.setTextColor(Color.RED);
+        sleep7.setTextColor(Color.BLACK);
+        sleep8.setTextColor(Color.BLACK);
+        sleep9ormore.setTextColor(Color.BLACK);
         totalSleep = 6;
     }
 
     public void onSleep7ButtonPressed(View v)
     {
-        sleep7.setBackgroundColor(Color.GRAY);
+        sleep1.setTextColor(Color.BLACK);
+        sleep2.setTextColor(Color.BLACK);
+        sleep3.setTextColor(Color.BLACK);
+        sleep4.setTextColor(Color.BLACK);
+        sleep5.setTextColor(Color.BLACK);
+        sleep6.setTextColor(Color.BLACK);
+        sleep7.setTextColor(Color.RED);
+        sleep8.setTextColor(Color.BLACK);
+        sleep9ormore.setTextColor(Color.BLACK);
 
         totalSleep = 7;
     }
 
     public void onSleep8ButtonPressed(View v)
     {
-        sleep8.setBackgroundColor(Color.GRAY);
-
+        sleep1.setTextColor(Color.BLACK);
+        sleep2.setTextColor(Color.BLACK);
+        sleep3.setTextColor(Color.BLACK);
+        sleep4.setTextColor(Color.BLACK);
+        sleep5.setTextColor(Color.BLACK);
+        sleep6.setTextColor(Color.BLACK);
+        sleep7.setTextColor(Color.BLACK);
+        sleep8.setTextColor(Color.RED);
+        sleep9ormore.setTextColor(Color.BLACK);
         totalSleep = 8;
     }
 
     public void onSleep9ButtonPressed(View v)
     {
-        sleep9ormore.setBackgroundColor(Color.GRAY);
-
+        sleep1.setTextColor(Color.BLACK);
+        sleep2.setTextColor(Color.BLACK);
+        sleep3.setTextColor(Color.BLACK);
+        sleep4.setTextColor(Color.BLACK);
+        sleep5.setTextColor(Color.BLACK);
+        sleep6.setTextColor(Color.BLACK);
+        sleep7.setTextColor(Color.BLACK);
+        sleep8.setTextColor(Color.BLACK);
+        sleep9ormore.setTextColor(Color.RED);
         totalSleep = 9;
     }
 
