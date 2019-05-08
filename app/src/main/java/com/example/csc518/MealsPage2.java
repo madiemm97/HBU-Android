@@ -15,7 +15,7 @@ public class MealsPage2 extends AppCompatActivity {
     private CheckBox atTheTable, withFamilyandFriends, inFrontOfTV, whileDoingWork, mindfullyWithNoDistractions;
     public ArrayList<String> whileEating;
     MealsPage2 myself;
-    String numOfMeals;
+    private int numberOfMeals;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,7 +31,7 @@ public class MealsPage2 extends AppCompatActivity {
         this.whileEating = new ArrayList<>();
         this.submitButton = (Button)findViewById(R.id.submitButton);
 
-        this.numOfMeals = getIntent().getExtras().getString("numOfMeals");
+        this.numberOfMeals = getIntent().getExtras().getInt("numberOfMeals");
 
     }
 
@@ -67,8 +67,8 @@ public class MealsPage2 extends AppCompatActivity {
         //i.putExtra("whileEating", whileEating);
         i.putStringArrayListExtra("whileEating", whileEating);
         //String numOfMeals = getIntent().getExtras().getString("numOfMeals");
-        i.putExtra("numOfMeals", myself.numOfMeals);
-        System.out.println(myself.numOfMeals);
+        i.putExtra("numberOfMeals", myself.numberOfMeals);
+        System.out.println("***" + myself.numberOfMeals);
 
 
         //set numberOfMeals to firebase

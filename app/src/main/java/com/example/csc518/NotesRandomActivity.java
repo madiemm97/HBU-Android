@@ -30,7 +30,7 @@ public class NotesRandomActivity extends AppCompatActivity
         this.randomNotesLV = (ListView)findViewById(R.id.randomNotesLV);
 
         Core.database = FirebaseDatabase.getInstance();
-        DatabaseReference notesRef = database.getReference("notes").child("gratitude");
+        Core.notesRandomRef = database.getReference("Notes");
 
         //this allows us to delete an entry
         this.randomNotesLV.setClickable(true);
@@ -51,12 +51,14 @@ public class NotesRandomActivity extends AppCompatActivity
     {
         String randomNote = this.randomET.getText().toString();
 
-        // Instanciating an array list (you don't need to do this,
-        // you already have yours).
-
         Core.listOfRandomThings.add(randomNote);
         Core.listOfNotes.add(randomNote);
 
+        GettingCurrentDate date = new GettingCurrentDate();
+        String currDate = date.getCurrentDate();
+
+        GoalObject goalObject = new GoalObject(currDate, randomNote);
+        Core.notesRandomRef.child("Random").child("abc123").push().setValue(goalObject);
 
         // This is the array adapter, it takes the context of the activity as a
         // first parameter, the type of list view as a second parameter and your

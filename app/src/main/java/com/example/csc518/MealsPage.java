@@ -27,7 +27,7 @@ public class MealsPage extends AppCompatActivity
     private Button mealNumSeven;
     private Button mealNumEight;
     private Button mealNumNine;
-    private String numberOfMeals;
+    private int numberOfMeals;
 
 
     @Override
@@ -85,7 +85,7 @@ public class MealsPage extends AppCompatActivity
 
 
 
-        numberOfMeals = "1";
+        numberOfMeals = 1;
     }
 
     public void mealNumTwoPressed(View v)
@@ -99,7 +99,7 @@ public class MealsPage extends AppCompatActivity
         mealNumSeven.setTextColor(Color.BLACK);
         mealNumEight.setTextColor(Color.BLACK);
         mealNumNine.setTextColor(Color.BLACK);
-        numberOfMeals = "2";
+        numberOfMeals = 2;
     }
 
     public void mealNumThreePressed(View v)
@@ -113,7 +113,7 @@ public class MealsPage extends AppCompatActivity
         mealNumSeven.setTextColor(Color.BLACK);
         mealNumEight.setTextColor(Color.BLACK);
         mealNumNine.setTextColor(Color.BLACK);
-        numberOfMeals = "3";
+        numberOfMeals = 3;
     }
 
     public void mealNumFourPressed(View v)
@@ -127,7 +127,7 @@ public class MealsPage extends AppCompatActivity
         mealNumSeven.setTextColor(Color.BLACK);
         mealNumEight.setTextColor(Color.BLACK);
         mealNumNine.setTextColor(Color.BLACK);
-        numberOfMeals = "4";
+        numberOfMeals = 4;
     }
 
     public void mealNumFivePressed(View v)
@@ -141,7 +141,7 @@ public class MealsPage extends AppCompatActivity
         mealNumSeven.setTextColor(Color.BLACK);
         mealNumEight.setTextColor(Color.BLACK);
         mealNumNine.setTextColor(Color.BLACK);
-        numberOfMeals = "5";
+        numberOfMeals = 5;
     }
 
     public void mealNumSixPressed(View v)
@@ -155,7 +155,7 @@ public class MealsPage extends AppCompatActivity
         mealNumSeven.setTextColor(Color.BLACK);
         mealNumEight.setTextColor(Color.BLACK);
         mealNumNine.setTextColor(Color.BLACK);
-        numberOfMeals = "6";
+        numberOfMeals = 6;
     }
 
     public void mealNumSevenPressed(View v)
@@ -169,7 +169,7 @@ public class MealsPage extends AppCompatActivity
         mealNumSeven.setTextColor(Color.RED);
         mealNumEight.setTextColor(Color.BLACK);
         mealNumNine.setTextColor(Color.BLACK);
-        numberOfMeals = "7";
+        numberOfMeals = 7;
     }
 
     public void mealNumEightPressed(View v)
@@ -183,7 +183,7 @@ public class MealsPage extends AppCompatActivity
         mealNumSeven.setTextColor(Color.BLACK);
         mealNumEight.setTextColor(Color.RED);
         mealNumNine.setTextColor(Color.BLACK);
-        numberOfMeals = "8";
+        numberOfMeals = 8;
     }
 
     public void mealNumNinePressed(View v)
@@ -197,7 +197,7 @@ public class MealsPage extends AppCompatActivity
         mealNumSeven.setTextColor(Color.BLACK);
         mealNumEight.setTextColor(Color.BLACK);
         mealNumNine.setTextColor(Color.RED);
-        numberOfMeals = "9";
+        numberOfMeals = 9;
     }
 
     public void onSubmitButtonPressed(View v)
