@@ -5,6 +5,7 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -16,6 +17,7 @@ public class MindPage4 extends AppCompatActivity {
     private  TextView threeTV;
     private TextView fourTV;
     private TextView fiveTV;
+    private Button nextPageMP4Button;
     int placesGone;
     private MindPage4 MindPage4Activity;
 
@@ -31,6 +33,7 @@ public class MindPage4 extends AppCompatActivity {
         this.threeTV = (TextView)(findViewById(R.id.threeTV));
         this.fourTV = (TextView)(findViewById(R.id.fourTV));
         this.fiveTV = (TextView)(findViewById(R.id.fiveTV));
+        this.nextPageMP4Button = this.findViewById(R.id.nextPageMP4Button);
         this.MindPage4Activity = this;
 
 

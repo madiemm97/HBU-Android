@@ -271,7 +271,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:background="#00FFFFFF"
-                            android:onClick="onNextButtonPressedMP4"
+                            android:onClick="onNextButtonPressed"
                             android:text="Next"
                             android:textColor="@android:color/white" />
                     </LinearLayout>

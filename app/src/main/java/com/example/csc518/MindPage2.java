@@ -18,7 +18,7 @@ public class MindPage2 extends AppCompatActivity {
     private Button worstdayeverButton;
     private Button nextButton;
     private Button notGreatButton;
-    private ArrayList todayFeelings;
+    private ArrayList<String> todayFeelings = new ArrayList();
     int happy;
 
 
@@ -38,19 +38,20 @@ public class MindPage2 extends AppCompatActivity {
         this.nextButton = (Button)(findViewById(R.id.nextButton1));
 
 
-
     }
 
     public void onNextButtonPressed (View v)
     {
-        Intent i = new Intent(this, MindPage3.class);
-        this.startActivity(i);
+
         System.out.println(todayFeelings);
         if(happy == 1)
         {
             todayFeelings.add("happy");
             System.out.println(todayFeelings);
         }
+
+        Intent i = new Intent(this, MindPage3.class);
+        this.startActivity(i);
     }
 
 

@@ -6,8 +6,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 public class NotesPrideActivity extends AppCompatActivity
 {
@@ -28,9 +31,27 @@ public class NotesPrideActivity extends AppCompatActivity
         //populate current fields from information saved in database
 
         Core.database = FirebaseDatabase.getInstance();
-        Core.goalsRef = Core.database.getReference("Notes");
+        Core.goalsRef = Core.database.getReference("Notes").child("Things To Be Proud Of").child("abc123");
 
+        Core.goalsRef.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                // ...
+                System.out.println("***" + dataSnapshot);
+                DataSnapshot ttbpo = dataSnapshot.child("Things To Be Proud Of");
+                for(DataSnapshot ds : ttbpo.getChildren())
+                {
+                    //break up ds to get your pieces
+                    //DataSnapshot { key = abc123, value = {Things To Be Proud Of={abc123={-LeMwtma8vFT1SW7NI75={date=05/08/19, goal=lol}}}} }
+                }
+            }
 
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+                // ...
+                System.out.println(databaseError.toString());
+            }
+        });
     }
 
     public void onSaveButtonPressed(View v)

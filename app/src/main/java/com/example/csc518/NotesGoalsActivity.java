@@ -48,6 +48,8 @@ public class NotesGoalsActivity extends AppCompatActivity
                 //remember to remove from database
             }
         });
+
+
     }
 
     public void onAddGoalButtonPressed(View v)
