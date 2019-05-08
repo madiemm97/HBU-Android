@@ -1,10 +1,10 @@
 package com.example.csc518;
 
+import android.content.Intent;
 import android.graphics.Color;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.Button;
 import android.widget.TextView;
 
 public class MindPage3 extends AppCompatActivity {
@@ -80,4 +80,12 @@ public class MindPage3 extends AppCompatActivity {
         experienceValue = 5;
         anxiousnessTV.setTextColor(Color.WHITE);
     }
+
+
+    public void onNextButtonPressed(View v)
+    {
+        Intent i = new Intent(this, MindPage4.class);
+        this.startActivity(i);
+    }
+
 }

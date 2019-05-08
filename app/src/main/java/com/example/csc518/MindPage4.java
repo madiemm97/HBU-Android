@@ -1,10 +1,12 @@
 package com.example.csc518;
 
+import android.content.Intent;
 import android.graphics.Color;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MindPage4 extends AppCompatActivity {
 
@@ -15,6 +17,7 @@ public class MindPage4 extends AppCompatActivity {
     private TextView fourTV;
     private TextView fiveTV;
     int placesGone;
+    private MindPage4 MindPage4Activity;
 
 
     @Override
@@ -28,31 +31,34 @@ public class MindPage4 extends AppCompatActivity {
         this.threeTV = (TextView)(findViewById(R.id.threeTV));
         this.fourTV = (TextView)(findViewById(R.id.fourTV));
         this.fiveTV = (TextView)(findViewById(R.id.fiveTV));
+        this.MindPage4Activity = this;
 
 
     }
 
     public void onZeroTVPressed(View v)
     {
-        zeroTV.setTextColor(Color.LTGRAY);
+        zeroTV.setTextColor(Color.RED);
         oneTV.setTextColor(Color.WHITE);
         twoTV.setTextColor(Color.WHITE);
         threeTV.setTextColor(Color.WHITE);
         fourTV.setTextColor(Color.WHITE);
         fiveTV.setTextColor(Color.WHITE);
-        placesGone = 5;
+        placesGone = 0;
+        //Toast.makeText(MindPage4Activity, "Try going for a walk or calling up a friend!", Toast.LENGTH_LONG).show();
 
     }
 
     public void onOneTVPressed(View v)
     {
         zeroTV.setTextColor(Color.WHITE);
-        oneTV.setTextColor(Color.LTGRAY);
+        oneTV.setTextColor(Color.RED);
         twoTV.setTextColor(Color.WHITE);
         threeTV.setTextColor(Color.WHITE);
         fourTV.setTextColor(Color.WHITE);
         fiveTV.setTextColor(Color.WHITE);
-        placesGone = 4;
+        placesGone = 1;
+        //Toast.makeText(MindPage4Activity, "Try going for a walk or calling up a friend!", Toast.LENGTH_LONG).show();
 
     }
 
@@ -60,11 +66,11 @@ public class MindPage4 extends AppCompatActivity {
     {
         zeroTV.setTextColor(Color.WHITE);
         oneTV.setTextColor(Color.WHITE);
-        twoTV.setTextColor(Color.LTGRAY);
+        twoTV.setTextColor(Color.RED);
         threeTV.setTextColor(Color.WHITE);
         fourTV.setTextColor(Color.WHITE);
         fiveTV.setTextColor(Color.WHITE);
-        placesGone = 3;
+        placesGone = 2;
 
     }
 
@@ -73,10 +79,10 @@ public class MindPage4 extends AppCompatActivity {
         zeroTV.setTextColor(Color.WHITE);
         oneTV.setTextColor(Color.WHITE);
         twoTV.setTextColor(Color.WHITE);
-        threeTV.setTextColor(Color.LTGRAY);
+        threeTV.setTextColor(Color.RED);
         fourTV.setTextColor(Color.WHITE);
         fiveTV.setTextColor(Color.WHITE);
-        placesGone = 1;
+        placesGone = 3;
 
     }
 
@@ -86,9 +92,9 @@ public class MindPage4 extends AppCompatActivity {
         oneTV.setTextColor(Color.WHITE);
         twoTV.setTextColor(Color.WHITE);
         threeTV.setTextColor(Color.WHITE);
-        fourTV.setTextColor(Color.LTGRAY);
+        fourTV.setTextColor(Color.RED);
         fiveTV.setTextColor(Color.WHITE);
-        placesGone = 0;
+        placesGone = 4;
 
     }
 
@@ -99,9 +105,25 @@ public class MindPage4 extends AppCompatActivity {
         twoTV.setTextColor(Color.WHITE);
         threeTV.setTextColor(Color.WHITE);
         fourTV.setTextColor(Color.WHITE);
-        fiveTV.setTextColor(Color.LTGRAY);
-        placesGone = 0;
+        fiveTV.setTextColor(Color.RED);
+        placesGone = 5;
 
+    }
+
+    public void onNextButtonPressed(View v)
+    {
+        Intent i = new Intent(this, MindPage5.class);
+        this.startActivity(i);
+        if(placesGone < 3)
+        {
+            Toast.makeText(MindPage4Activity, "Try going for a walk or calling up a friend!", Toast.LENGTH_LONG).show();
+
+        }
+        else if (placesGone > 3)
+        {
+            Toast.makeText(MindPage4Activity, "Make sure you take some time to relax today!", Toast.LENGTH_LONG).show();
+
+        }
     }
 
 }

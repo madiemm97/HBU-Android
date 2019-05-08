@@ -60,13 +60,25 @@ public class MindPage2 extends AppCompatActivity {
        happy =+1;
 
        happyButton.setTextColor(Color.RED);
-
+        pleasedButton.setTextColor(Color.BLACK);
+        terribleButton.setTextColor(Color.BLACK);
+        indifferentButton.setTextColor(Color.BLACK);
+        notGreatButton.setTextColor(Color.BLACK);
+        worstdayeverButton.setTextColor(Color.BLACK);
 
     }
 
     public void onPleasedButtonPressed (View v)
     {
         pleasedButton.setTextColor(Color.RED);
+        terribleButton.setTextColor(Color.BLACK);
+        indifferentButton.setTextColor(Color.BLACK);
+        notGreatButton.setTextColor(Color.BLACK);
+        worstdayeverButton.setTextColor(Color.BLACK);
+        happyButton.setTextColor(Color.BLACK);
+
+
+
         //todayFeelingValue = 1;
 
 
@@ -75,22 +87,49 @@ public class MindPage2 extends AppCompatActivity {
     public void onIndifferentButton (View v)
     {
         //todayFeelingValue = 2;
+        pleasedButton.setTextColor(Color.BLACK);
+        terribleButton.setTextColor(Color.BLACK);
         indifferentButton.setTextColor(Color.RED);
+        notGreatButton.setTextColor(Color.BLACK);
+        worstdayeverButton.setTextColor(Color.BLACK);
+        happyButton.setTextColor(Color.BLACK);
+
     }
 
     public void onTerribleButton (View v)
     {
         //todayFeelingValue = 3;
+        pleasedButton.setTextColor(Color.BLACK);
+        terribleButton.setTextColor(Color.RED);
+        indifferentButton.setTextColor(Color.BLACK);
+        notGreatButton.setTextColor(Color.BLACK);
+        worstdayeverButton.setTextColor(Color.BLACK);
+        happyButton.setTextColor(Color.BLACK);
+
     }
 
     public void onNotGreatButton (View v)
     {
         //todayFeelingValue = 3;
+        pleasedButton.setTextColor(Color.BLACK);
+        terribleButton.setTextColor(Color.BLACK);
+        indifferentButton.setTextColor(Color.BLACK);
+        notGreatButton.setTextColor(Color.RED);
+        worstdayeverButton.setTextColor(Color.BLACK);
+        happyButton.setTextColor(Color.BLACK);
+
     }
 
     public void onWorstDayEverButton (View v)
     {
         //todayFeelingValue = 4;
+        pleasedButton.setTextColor(Color.BLACK);
+        terribleButton.setTextColor(Color.BLACK);
+        indifferentButton.setTextColor(Color.BLACK);
+        notGreatButton.setTextColor(Color.BLACK);
+        worstdayeverButton.setTextColor(Color.RED);
+        happyButton.setTextColor(Color.BLACK);
+
     }
 
 

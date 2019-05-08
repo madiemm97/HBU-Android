@@ -41,7 +41,7 @@
                     android:textColor="@android:color/white" />
 
                 <TextView
-                    android:id="@+id/textView13"
+                    android:id="@+id/correctWordTV"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Today I have experienced:"
@@ -258,8 +258,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:onClick="onSubmitButtonPressed"
-                        android:text="Next" />
+                        android:background="#00796464"
+                        android:onClick="onNextButtonPressed"
+                        android:text="Next"
+                        android:textColor="@android:color/white" />
                 </LinearLayout>
 
             </LinearLayout>
