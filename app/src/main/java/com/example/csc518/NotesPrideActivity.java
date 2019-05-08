@@ -37,7 +37,7 @@ public class NotesPrideActivity extends AppCompatActivity
     {
         //save to the database
 
-        if(!this.thing1.equals(""))
+        if(!this.thing1.getText().toString().equals(""))
         {
             Core.listOfNotes.add("What I am proud of: " + thing1.getText().toString());
             GettingCurrentDate date = new GettingCurrentDate();
@@ -46,7 +46,7 @@ public class NotesPrideActivity extends AppCompatActivity
             Core.goalsRef.child("Things To Be Proud Of").child("abc123").push().setValue(goalObject);
 
         }
-        if(!this.thing2.equals(""))
+        if(!this.thing2.getText().toString().equals(""))
         {
             Core.listOfNotes.add("What I am proud of: " + thing2.getText().toString());
             GettingCurrentDate date = new GettingCurrentDate();
@@ -54,7 +54,7 @@ public class NotesPrideActivity extends AppCompatActivity
             GoalObject goalObject1 = new GoalObject(currDate, thing2.getText().toString());
             Core.goalsRef.child("Things To Be Proud Of").child("abc123").push().setValue(goalObject1);
         }
-        if(!this.thing3.equals(""))
+        if(!this.thing3.getText().toString().equals(""))
         {
             Core.listOfNotes.add("What I am proud of: " + thing3.getText().toString());
             GettingCurrentDate date = new GettingCurrentDate();
@@ -62,7 +62,7 @@ public class NotesPrideActivity extends AppCompatActivity
             GoalObject goalObject2 = new GoalObject(currDate, thing3.getText().toString());
             Core.goalsRef.child("Things To Be Proud Of").child("abc123").push().setValue(goalObject2);
         }
-        if(!this.thing4.equals(""))
+        if(!this.thing4.getText().toString().equals(""))
         {
             Core.listOfNotes.add("What I am proud of: " + thing4.getText().toString());
             GettingCurrentDate date = new GettingCurrentDate();
@@ -70,7 +70,7 @@ public class NotesPrideActivity extends AppCompatActivity
             GoalObject goalObject3 = new GoalObject(currDate, thing4.getText().toString());
             Core.goalsRef.child("Things To Be Proud Of").child("abc123").push().setValue(goalObject3);
         }
-        if(!this.thing5.equals(""))
+        if(!this.thing5.getText().toString().equals(""))
         {
             Core.listOfNotes.add("What I am proud of: " + thing5.getText().toString());
             GettingCurrentDate date = new GettingCurrentDate();

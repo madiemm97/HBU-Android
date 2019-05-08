@@ -5,14 +5,11 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
 public class MindPage4 extends AppCompatActivity {
 
-
-    private Button nextPageMP4;
     private TextView zeroTV;
     private TextView oneTV;
     private TextView twoTV;
@@ -35,7 +32,6 @@ public class MindPage4 extends AppCompatActivity {
         this.fourTV = (TextView)(findViewById(R.id.fourTV));
         this.fiveTV = (TextView)(findViewById(R.id.fiveTV));
         this.MindPage4Activity = this;
-        this.nextPageMP4 = (Button) (findViewById(R.id.nextPageMP4Button));
 
 
     }
@@ -114,11 +110,9 @@ public class MindPage4 extends AppCompatActivity {
 
     }
 
-
-    public void onNextButtonPressedMP4(View v)
+    public void onNextButtonPressed(View v)
     {
-        Intent i = new Intent(this, MindPage5.class);
-        startActivity(i);
+
         if(placesGone < 3)
         {
             Toast.makeText(MindPage4Activity, "Try going for a walk or calling up a friend!", Toast.LENGTH_LONG).show();
@@ -129,10 +123,8 @@ public class MindPage4 extends AppCompatActivity {
             Toast.makeText(MindPage4Activity, "Make sure you take some time to relax today!", Toast.LENGTH_LONG).show();
 
         }
-        else
-        {
-
-        }
+        Intent i = new Intent(this, MindPage5.class);
+        this.startActivity(i);
 
     }
 
