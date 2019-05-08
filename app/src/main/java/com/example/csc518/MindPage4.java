@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MindPage4 extends AppCompatActivity {
 
@@ -117,8 +118,8 @@ public class MindPage4 extends AppCompatActivity {
     public void onNextButtonPressedMP4(View v)
     {
         Intent i = new Intent(this, MindPage5.class);
-        this.startActivity(i);
-        /*if(placesGone < 3)
+        startActivity(i);
+        if(placesGone < 3)
         {
             Toast.makeText(MindPage4Activity, "Try going for a walk or calling up a friend!", Toast.LENGTH_LONG).show();
 
@@ -131,7 +132,7 @@ public class MindPage4 extends AppCompatActivity {
         else
         {
 
-        }*/
+        }
 
     }
 
