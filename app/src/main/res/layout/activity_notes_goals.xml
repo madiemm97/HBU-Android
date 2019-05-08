@@ -22,7 +22,7 @@
             android:textSize="30sp" />
 
         <EditText
-            android:id="@+id/goalET"
+            android:id="@+id/medNameET"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
@@ -34,7 +34,7 @@
             android:textSize="24sp" />
 
         <Button
-            android:id="@+id/addGoalButton"
+            android:id="@+id/addMedButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
@@ -44,7 +44,7 @@
             android:textColor="@android:color/white" />
 
         <ListView
-            android:id="@+id/goalsLV"
+            android:id="@+id/medsLV"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginLeft="10dp"

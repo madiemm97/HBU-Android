@@ -75,6 +75,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:background="@drawable/round_button"
+                                android:onClick="onHappyButtonPressed"
                                 android:text="Happy :)" />
 
                             <LinearLayout
@@ -92,6 +93,7 @@
                                 android:layout_weight="1"
                                 android:background="@drawable/round_button"
 
+                                android:onClick="onPleasedButtonPressed"
                                 android:text="Pleased :]" />
                         </LinearLayout>
 
@@ -121,6 +123,7 @@
                             android:layout_weight="1"
                             android:background="@drawable/round_button"
 
+                            android:onClick="onIndifferentButton"
                             android:text="Indifferent :|" />
 
                         <LinearLayout
@@ -138,6 +141,7 @@
                             android:layout_weight="1"
                             android:background="@drawable/round_button"
 
+                            android:onClick="onNotGreatButton"
                             android:text="Not Great :/" />
 
                     </LinearLayout>
@@ -171,6 +175,7 @@
                                 android:layout_weight="1"
                                 android:background="@drawable/round_button"
 
+                                android:onClick="onTerribleButton"
                                 android:text="Terrible :(" />
 
                             <LinearLayout
@@ -186,6 +191,7 @@
                                 android:layout_weight="1"
                                 android:background="@drawable/round_button"
 
+                                android:onClick="onWorstDayEverButton"
                                 android:text="Worst day ever >:(" />
                         </LinearLayout>
 

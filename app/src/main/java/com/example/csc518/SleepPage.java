@@ -6,9 +6,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import java.util.Date;
-
-import com.google.firebase.database.FirebaseDatabase;
 
 public class SleepPage extends AppCompatActivity {
 
@@ -23,6 +20,7 @@ public class SleepPage extends AppCompatActivity {
     private Button sleep9ormore;
     private int totalSleep;
     private Button submitButton;
+
 
 
 
@@ -42,8 +40,6 @@ public class SleepPage extends AppCompatActivity {
         this.sleep9ormore = (Button)(findViewById(R.id.sleep9ormore));
         this.submitButton = (Button)(findViewById(R.id.submitButton));
 
-        //Core.sleepDataRef = FirebaseDatabase.getInstance().getReference().child("Sleep").child("UID"); //.child("UID").child("Date").child("Number of Meals");
-
 
     }
 
@@ -52,7 +48,6 @@ public class SleepPage extends AppCompatActivity {
         sleep1.setBackgroundColor(Color.GRAY);
 
         totalSleep = 1;
-
     }
 
     public void onSleep2ButtonPressed(View v)
@@ -113,15 +108,9 @@ public class SleepPage extends AppCompatActivity {
 
     public void onSubmitButtonPressed(View v)
     {
-        Intent i = new Intent(this, SleepPage2.class);
-        System.out.println(totalSleep);
-        i.putExtra("totalSleep", totalSleep);
-
-        // This will set the total sleep a person slept to the current date and UID
-        //Core.sleepDataRef.child(Core.currentUser.getUid()).push().setValue(totalSleep);
-
+        Intent i = new Intent(this, SleepPage.class);
         this.startActivity(i);
-
+        System.out.println(totalSleep);
     }
 
 

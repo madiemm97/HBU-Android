@@ -224,13 +224,6 @@
             android:layout_height="50dp"
             android:orientation="horizontal">
 
-            <Button
-                android:id="@+id/button39"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Back" />
-
             <LinearLayout
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
@@ -243,7 +236,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:onClick="submitButtonPressed"
-                android:text="Next" />
+                android:text="Done" />
         </LinearLayout>
 
     </LinearLayout>
