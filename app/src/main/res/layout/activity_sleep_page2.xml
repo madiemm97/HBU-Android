@@ -39,7 +39,7 @@
                     android:text="_________________________________________________________" />
 
                 <TextView
-                    android:id="@+id/textView13"
+                    android:id="@+id/correctWordTV"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Today, I felt..."

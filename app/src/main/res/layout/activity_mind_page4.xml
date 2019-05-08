@@ -41,7 +41,7 @@
                     android:textColor="@android:color/white" />
 
                 <TextView
-                    android:id="@+id/textView13"
+                    android:id="@+id/correctWordTV"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="I have gone to this many places today:"
@@ -99,7 +99,7 @@
                                     android:layout_weight="1"
                                     android:clickable="true"
                                     android:onClick="onOneTVPressed"
-                                    android:text="1"
+                                    android:text="           1"
                                     android:textColor="@android:color/white"
                                     android:textSize="36sp" />
 
@@ -237,7 +237,7 @@
                                         android:layout_weight="1"
                                         android:clickable="true"
                                         android:onClick="onFiveTVPressed"
-                                        android:text="5"
+                                        android:text="5+"
                                         android:textColor="@android:color/white"
                                         android:textSize="36sp" />
                                 </LinearLayout>
@@ -270,7 +270,10 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="All Done" />
+                            android:background="#00FFFFFF"
+                            android:onClick="onNextButtonPressed"
+                            android:text="Next"
+                            android:textColor="@android:color/white" />
                     </LinearLayout>
 
                 </LinearLayout>

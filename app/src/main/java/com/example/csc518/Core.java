@@ -23,6 +23,8 @@ public class Core
     public static List<String> listOfEmergencyMeds = new ArrayList<String>();
 
     public static String emergencyPills = "";
+    public static String wordToRemember = "";
+    public static String imageToRemember = "";
 
 
 
