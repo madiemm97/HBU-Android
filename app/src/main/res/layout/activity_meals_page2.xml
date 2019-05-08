@@ -66,7 +66,7 @@
                     android:shadowColor="@color/colorAccent" />
 
                 <LinearLayout
-                    android:layout_width="50dp"
+                    android:layout_width="10dp"
                     android:layout_height="20dp"
                     android:layout_weight="1"
                     android:orientation="horizontal"></LinearLayout>
@@ -76,8 +76,10 @@
                     android:layout_width="300dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:background="#00FFFFFF"
                     android:shadowColor="@color/colorAccent"
-                    android:text="at the table" />
+                    android:text="at the table"
+                    android:textColor="@android:color/white" />
             </LinearLayout>
         </LinearLayout>
 
@@ -103,7 +105,7 @@
                     android:layout_weight="1" />
 
                 <LinearLayout
-                    android:layout_width="50dp"
+                    android:layout_width="10dp"
                     android:layout_height="50dp"
                     android:layout_weight="1"
                     android:orientation="horizontal"></LinearLayout>
@@ -113,7 +115,9 @@
                     android:layout_width="300dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="with friends/family" />
+                    android:background="#00FFFFFF"
+                    android:text="with friends/family"
+                    android:textColor="@android:color/white" />
 
             </LinearLayout>
         </LinearLayout>
@@ -135,7 +139,7 @@
                     android:layout_weight="1" />
 
                 <LinearLayout
-                    android:layout_width="50dp"
+                    android:layout_width="10dp"
                     android:layout_height="50dp"
                     android:layout_weight="1"
                     android:orientation="horizontal"></LinearLayout>
@@ -145,7 +149,9 @@
                     android:layout_width="300dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="in front of the tv " />
+                    android:background="#00FFFFFF"
+                    android:text="in front of the tv "
+                    android:textColor="@android:color/white" />
             </LinearLayout>
         </LinearLayout>
 
@@ -166,7 +172,7 @@
                 android:layout_weight="1" />
 
             <LinearLayout
-                android:layout_width="50dp"
+                android:layout_width="10dp"
                 android:layout_height="50dp"
                 android:layout_weight="1"
                 android:orientation="horizontal"></LinearLayout>
@@ -176,7 +182,9 @@
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="while doing work " />
+                android:background="#00FFFFFF"
+                android:text="while doing work "
+                android:textColor="@android:color/white" />
         </LinearLayout>
 
         <LinearLayout
@@ -196,7 +204,7 @@
                     android:layout_weight="1" />
 
                 <LinearLayout
-                    android:layout_width="50dp"
+                    android:layout_width="10dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:orientation="horizontal"></LinearLayout>
@@ -206,7 +214,9 @@
                     android:layout_width="300dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Mindfully with no distractions" />
+                    android:background="#00FFFFFF"
+                    android:text="Mindfully with no distractions"
+                    android:textColor="@android:color/white" />
             </LinearLayout>
         </LinearLayout>
 
@@ -226,8 +236,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="#00FBFBFB"
                 android:onClick="onSubmitButtonPressed"
-                android:text="Next" />
+                android:text="Next"
+                android:textColor="@android:color/white" />
         </LinearLayout>
 
     </LinearLayout>

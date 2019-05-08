@@ -58,11 +58,12 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:background="@android:color/white"
                     android:onClick="drink0Pressed"
                     android:text="0" />
 
                 <LinearLayout
-                    android:layout_width="50dp"
+                    android:layout_width="10dp"
                     android:layout_height="20dp"
                     android:layout_weight="1"
                     android:orientation="horizontal"></LinearLayout>
@@ -72,6 +73,7 @@
                     android:layout_width="70dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:background="@android:color/white"
                     android:onClick="drink1Pressed"
                     android:text="1" />
 
@@ -80,7 +82,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="10dp"
             android:orientation="horizontal"></LinearLayout>
 
         <LinearLayout
@@ -98,11 +100,12 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:background="@android:color/white"
                     android:onClick="drink2Pressed"
                     android:text="2" />
 
                 <LinearLayout
-                    android:layout_width="50dp"
+                    android:layout_width="10dp"
                     android:layout_height="50dp"
                     android:layout_weight="1"
                     android:orientation="horizontal"></LinearLayout>
@@ -112,6 +115,7 @@
                     android:layout_width="70dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:background="@android:color/white"
                     android:onClick="drink3Pressed"
                     android:text="3" />
 
@@ -133,11 +137,12 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:background="@android:color/white"
                     android:onClick="drink4Pressed"
                     android:text="4" />
 
                 <LinearLayout
-                    android:layout_width="50dp"
+                    android:layout_width="10dp"
                     android:layout_height="50dp"
                     android:layout_weight="1"
                     android:orientation="horizontal"></LinearLayout>
@@ -147,6 +152,7 @@
                     android:layout_width="70dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:background="@android:color/white"
                     android:onClick="drink5Pressed"
                     android:text="5" />
             </LinearLayout>
@@ -167,11 +173,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="@android:color/white"
                 android:onClick="drink6Pressed"
                 android:text="6" />
 
             <LinearLayout
-                android:layout_width="50dp"
+                android:layout_width="10dp"
                 android:layout_height="50dp"
                 android:layout_weight="1"
                 android:orientation="horizontal"></LinearLayout>
@@ -181,6 +188,7 @@
                 android:layout_width="70dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="@android:color/white"
                 android:onClick="drink7Pressed"
                 android:text="7" />
         </LinearLayout>
@@ -193,6 +201,11 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:orientation="horizontal"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:orientation="horizontal">
 
                 <Button
@@ -200,11 +213,12 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:background="@android:color/white"
                     android:onClick="drink8Pressed"
                     android:text="8" />
 
                 <LinearLayout
-                    android:layout_width="50dp"
+                    android:layout_width="10dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:orientation="horizontal"></LinearLayout>
@@ -214,6 +228,7 @@
                     android:layout_width="70dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:background="@android:color/white"
                     android:onClick="drink9ormorePressed"
                     android:text="9 or more" />
             </LinearLayout>
@@ -235,8 +250,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="#00FFFFFF"
                 android:onClick="submitButtonPressed"
-                android:text="Done" />
+                android:text="Done"
+                android:textColor="@android:color/white" />
         </LinearLayout>
 
     </LinearLayout>

@@ -140,4 +140,10 @@ public class MedsPage extends AppCompatActivity {
         Intent i = new Intent(this, MedsPage2.class);
         this.startActivity(i);
     }
+
+    public void onDoneButtonPressed(View v)
+    {
+        Intent i = new Intent(this, MainActivity.class);
+        this.startActivity(i);
+    }
 }
