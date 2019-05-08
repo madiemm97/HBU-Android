@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MedsPage2"></activity>
+        <activity android:name=".MedsPage2" />
         <activity android:name=".MindPage4" />
         <activity android:name=".MindPage3" />
         <activity android:name=".MindPage2" />

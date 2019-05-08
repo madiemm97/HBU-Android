@@ -112,7 +112,7 @@ public class MealsPage3 extends AppCompatActivity {
 
     public void submitButtonPressed(View v)
     {
-        Intent i = new Intent(this, MealsPage3.class);
+        Intent i = new Intent(this, MainActivity.class);
         this.startActivity(i);
         System.out.println(totalDrinks);
         if(totalDrinks > 2)

@@ -236,7 +236,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:onClick="submitButtonPressed"
-                android:text="Next" />
+                android:text="Done" />
         </LinearLayout>
 
     </LinearLayout>

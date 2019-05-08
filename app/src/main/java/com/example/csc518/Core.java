@@ -19,6 +19,11 @@ public class Core
     public static List<String> listOfGoals = new ArrayList<String>();
     public static List<String> listOfGratitude = new ArrayList<String>();
     public static List<String> listOfRandomThings = new ArrayList<String>();
+    public static List<String> listOfMeds = new ArrayList<String>();
+    public static List<String> listOfEmergencyMeds = new ArrayList<String>();
+
+    public static String emergencyPills = "";
+
 
 
 }
