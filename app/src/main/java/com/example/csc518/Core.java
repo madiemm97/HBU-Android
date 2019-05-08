@@ -32,4 +32,5 @@ public class Core
     public static String wordToRemember = "";
     public static String imageToRemember = "";
 
+
 }
