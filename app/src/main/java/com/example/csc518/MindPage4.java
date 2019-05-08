@@ -20,6 +20,8 @@ public class MindPage4 extends AppCompatActivity {
     private Button nextPageMP4Button;
     int placesGone;
     private MindPage4 MindPage4Activity;
+    private Button nextPage;
+
 
 
     @Override
@@ -35,7 +37,7 @@ public class MindPage4 extends AppCompatActivity {
         this.fiveTV = (TextView)(findViewById(R.id.fiveTV));
         this.nextPageMP4Button = this.findViewById(R.id.nextPageMP4Button);
         this.MindPage4Activity = this;
-
+        this.nextPage = (Button)(findViewById(R.id.nextPageMP4Button));
 
     }
 

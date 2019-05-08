@@ -2,13 +2,12 @@ package com.example.csc518;
 
 import android.content.Intent;
 import android.graphics.Color;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
+import android.widget.Toast;
 
-import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 import static com.example.csc518.Core.database;
@@ -28,6 +27,8 @@ public class MealsPage extends AppCompatActivity
     private Button mealNumEight;
     private Button mealNumNine;
     private int numberOfMeals;
+    private MealsPage MealsPageActivity;
+
 
 
     @Override
@@ -57,6 +58,7 @@ public class MealsPage extends AppCompatActivity
         this.mealNumSeven = (Button)findViewById(R.id.mealNumSeven);
         this.mealNumEight = (Button)findViewById(R.id.mealNumEight);
         this.mealNumNine = (Button)findViewById(R.id.mealNumNine);
+        this.MealsPageActivity = this;
 
 
 
@@ -211,6 +213,21 @@ public class MealsPage extends AppCompatActivity
         System.out.println("*** reached button");
         //Core.mealsRef.addListenerForSingleValueEvent();
         this.startActivity(i);
+
+        if(numberOfMeals < 3)
+        {
+            Toast.makeText(MealsPageActivity, "Try to aim for 3 meals!", Toast.LENGTH_LONG).show();
+
+        }
+        else if (numberOfMeals > 4)
+        {
+            Toast.makeText(MealsPageActivity, "Try to aim for 3 meals!", Toast.LENGTH_LONG).show();
+
+        }
+        else
+        {
+
+        }
 
     }
 }

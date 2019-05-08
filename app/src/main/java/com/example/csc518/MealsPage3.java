@@ -58,61 +58,156 @@ public class MealsPage3 extends AppCompatActivity {
 
     public void drink0Pressed(View v)
     {
-        drink0.setBackgroundColor(Color.WHITE);
+        drink0.setTextColor(Color.RED);
+        drink1.setTextColor(Color.BLACK);
+        drink2.setTextColor(Color.BLACK);
+        drink3.setTextColor(Color.BLACK);
+        drink4.setTextColor(Color.BLACK);
+        drink5.setTextColor(Color.BLACK);
+        drink6.setTextColor(Color.BLACK);
+        drink7.setTextColor(Color.BLACK);
+        drink8.setTextColor(Color.BLACK);
+        drink9ormore.setTextColor(Color.BLACK);
         totalDrinks = 0;
     }
 
     public void drink1Pressed(View v)
     {
-        drink1.setBackgroundColor(Color.WHITE);
+        drink0.setTextColor(Color.BLACK);
+        drink1.setTextColor(Color.RED);
+        drink2.setTextColor(Color.BLACK);
+        drink3.setTextColor(Color.BLACK);
+        drink4.setTextColor(Color.BLACK);
+        drink5.setTextColor(Color.BLACK);
+        drink6.setTextColor(Color.BLACK);
+        drink7.setTextColor(Color.BLACK);
+        drink8.setTextColor(Color.BLACK);
+        drink9ormore.setTextColor(Color.BLACK);
+
+
+
         totalDrinks = 1;
     }
 
     public void drink2Pressed(View v)
     {
-        drink2.setBackgroundColor(Color.WHITE);
+
+        drink0.setTextColor(Color.BLACK);
+        drink1.setTextColor(Color.BLACK);
+        drink2.setTextColor(Color.RED);
+        drink3.setTextColor(Color.BLACK);
+        drink4.setTextColor(Color.BLACK);
+        drink5.setTextColor(Color.BLACK);
+        drink6.setTextColor(Color.BLACK);
+        drink7.setTextColor(Color.BLACK);
+        drink8.setTextColor(Color.BLACK);
+        drink9ormore.setTextColor(Color.BLACK);
+
         totalDrinks = 2;
     }
 
     public void drink3Pressed(View v)
     {
-        drink3.setBackgroundColor(Color.WHITE);
+        drink0.setTextColor(Color.BLACK);
+        drink1.setTextColor(Color.BLACK);
+        drink2.setTextColor(Color.BLACK);
+        drink3.setTextColor(Color.RED);
+        drink4.setTextColor(Color.BLACK);
+        drink5.setTextColor(Color.BLACK);
+        drink6.setTextColor(Color.BLACK);
+        drink7.setTextColor(Color.BLACK);
+        drink8.setTextColor(Color.BLACK);
+        drink9ormore.setTextColor(Color.BLACK);
         totalDrinks = 3;
     }
 
     public void drink4Pressed(View v)
     {
-        drink4.setBackgroundColor(Color.WHITE);
+        drink0.setTextColor(Color.BLACK);
+        drink1.setTextColor(Color.BLACK);
+        drink2.setTextColor(Color.BLACK);
+        drink3.setTextColor(Color.BLACK);
+        drink4.setTextColor(Color.RED);
+        drink5.setTextColor(Color.BLACK);
+        drink6.setTextColor(Color.BLACK);
+        drink7.setTextColor(Color.BLACK);
+        drink8.setTextColor(Color.BLACK);
+        drink9ormore.setTextColor(Color.BLACK);
         totalDrinks = 4;
     }
 
     public void drink5Pressed(View v)
     {
-        drink5.setBackgroundColor(Color.WHITE);
+        drink0.setTextColor(Color.BLACK);
+        drink1.setTextColor(Color.BLACK);
+        drink2.setTextColor(Color.BLACK);
+        drink3.setTextColor(Color.BLACK);
+        drink4.setTextColor(Color.BLACK);
+        drink5.setTextColor(Color.RED);
+        drink6.setTextColor(Color.BLACK);
+        drink7.setTextColor(Color.BLACK);
+        drink8.setTextColor(Color.BLACK);
+        drink9ormore.setTextColor(Color.BLACK);
         totalDrinks = 5;
     }
 
     public void drink6Pressed(View v)
     {
-        drink6.setBackgroundColor(Color.WHITE);
+        drink0.setTextColor(Color.BLACK);
+        drink1.setTextColor(Color.BLACK);
+        drink2.setTextColor(Color.BLACK);
+        drink3.setTextColor(Color.BLACK);
+        drink4.setTextColor(Color.BLACK);
+        drink5.setTextColor(Color.BLACK);
+        drink6.setTextColor(Color.RED);
+        drink7.setTextColor(Color.BLACK);
+        drink8.setTextColor(Color.BLACK);
+        drink9ormore.setTextColor(Color.BLACK);
         totalDrinks = 6;
     }
 
     public void drink7Pressed(View v)
     {
-        drink7.setBackgroundColor(Color.WHITE);
+        drink0.setTextColor(Color.BLACK);
+        drink1.setTextColor(Color.BLACK);
+        drink2.setTextColor(Color.BLACK);
+        drink3.setTextColor(Color.BLACK);
+        drink4.setTextColor(Color.BLACK);
+        drink5.setTextColor(Color.BLACK);
+        drink6.setTextColor(Color.BLACK);
+        drink7.setTextColor(Color.RED);
+        drink8.setTextColor(Color.BLACK);
+        drink9ormore.setTextColor(Color.BLACK);
         totalDrinks = 7;
     }
 
     public void drink8Pressed(View v)
     {
-        drink8.setBackgroundColor(Color.WHITE);
+        drink0.setTextColor(Color.BLACK);
+        drink1.setTextColor(Color.BLACK);
+        drink2.setTextColor(Color.BLACK);
+        drink3.setTextColor(Color.BLACK);
+        drink4.setTextColor(Color.BLACK);
+        drink5.setTextColor(Color.BLACK);
+        drink6.setTextColor(Color.BLACK);
+        drink7.setTextColor(Color.BLACK);
+        drink8.setTextColor(Color.RED);
+        drink9ormore.setTextColor(Color.BLACK);
         totalDrinks = 8;
     }
 
     public void drink9ormorePressed(View v)
     {
-        drink9ormore.setBackgroundColor(Color.WHITE);
+        drink0.setTextColor(Color.BLACK);
+        drink1.setTextColor(Color.BLACK);
+        drink2.setTextColor(Color.BLACK);
+        drink3.setTextColor(Color.BLACK);
+        drink4.setTextColor(Color.BLACK);
+        drink5.setTextColor(Color.BLACK);
+        drink6.setTextColor(Color.BLACK);
+        drink7.setTextColor(Color.BLACK);
+        drink8.setTextColor(Color.BLACK);
+        drink9ormore.setTextColor(Color.RED);
         totalDrinks = 9;
     }
 

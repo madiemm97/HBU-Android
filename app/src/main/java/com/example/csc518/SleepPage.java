@@ -45,7 +45,7 @@ public class SleepPage extends AppCompatActivity {
 
     public void onSleep1ButtonPressed(View v)
     {
-        sleep1.setTextColor(Color.RED);
+        sleep1.setTextColor(Color.WHITE);
         sleep2.setTextColor(Color.BLACK);
         sleep3.setTextColor(Color.BLACK);
         sleep4.setTextColor(Color.BLACK);
@@ -64,7 +64,7 @@ public class SleepPage extends AppCompatActivity {
     public void onSleep2ButtonPressed(View v)
     {
         sleep1.setTextColor(Color.BLACK);
-        sleep2.setTextColor(Color.RED);
+        sleep2.setTextColor(Color.WHITE);
         sleep3.setTextColor(Color.BLACK);
         sleep4.setTextColor(Color.BLACK);
         sleep5.setTextColor(Color.BLACK);
@@ -80,7 +80,7 @@ public class SleepPage extends AppCompatActivity {
     {
         sleep1.setTextColor(Color.BLACK);
         sleep2.setTextColor(Color.BLACK);
-        sleep3.setTextColor(Color.RED);
+        sleep3.setTextColor(Color.WHITE);
         sleep4.setTextColor(Color.BLACK);
         sleep5.setTextColor(Color.BLACK);
         sleep6.setTextColor(Color.BLACK);
@@ -95,7 +95,7 @@ public class SleepPage extends AppCompatActivity {
         sleep1.setTextColor(Color.BLACK);
         sleep2.setTextColor(Color.BLACK);
         sleep3.setTextColor(Color.BLACK);
-        sleep4.setTextColor(Color.RED);
+        sleep4.setTextColor(Color.WHITE);
         sleep5.setTextColor(Color.BLACK);
         sleep6.setTextColor(Color.BLACK);
         sleep7.setTextColor(Color.BLACK);
@@ -109,11 +109,11 @@ public class SleepPage extends AppCompatActivity {
         sleep2.setTextColor(Color.BLACK);
         sleep3.setTextColor(Color.BLACK);
         sleep4.setTextColor(Color.BLACK);
-        sleep5.setTextColor(Color.RED);
+        sleep5.setTextColor(Color.WHITE);
         sleep6.setTextColor(Color.BLACK);
         sleep7.setTextColor(Color.BLACK);
         sleep8.setTextColor(Color.BLACK);
-        sleep9ormore.setTextColor(Color.BLACK);sleep5.setBackgroundColor(Color.GRAY);
+        sleep9ormore.setTextColor(Color.BLACK);
 
         totalSleep = 5;
     }
@@ -125,7 +125,7 @@ public class SleepPage extends AppCompatActivity {
         sleep3.setTextColor(Color.BLACK);
         sleep4.setTextColor(Color.BLACK);
         sleep5.setTextColor(Color.BLACK);
-        sleep6.setTextColor(Color.RED);
+        sleep6.setTextColor(Color.WHITE);
         sleep7.setTextColor(Color.BLACK);
         sleep8.setTextColor(Color.BLACK);
         sleep9ormore.setTextColor(Color.BLACK);
@@ -140,7 +140,7 @@ public class SleepPage extends AppCompatActivity {
         sleep4.setTextColor(Color.BLACK);
         sleep5.setTextColor(Color.BLACK);
         sleep6.setTextColor(Color.BLACK);
-        sleep7.setTextColor(Color.RED);
+        sleep7.setTextColor(Color.WHITE);
         sleep8.setTextColor(Color.BLACK);
         sleep9ormore.setTextColor(Color.BLACK);
 
@@ -156,7 +156,7 @@ public class SleepPage extends AppCompatActivity {
         sleep5.setTextColor(Color.BLACK);
         sleep6.setTextColor(Color.BLACK);
         sleep7.setTextColor(Color.BLACK);
-        sleep8.setTextColor(Color.RED);
+        sleep8.setTextColor(Color.WHITE);
         sleep9ormore.setTextColor(Color.BLACK);
         totalSleep = 8;
     }
@@ -171,7 +171,7 @@ public class SleepPage extends AppCompatActivity {
         sleep6.setTextColor(Color.BLACK);
         sleep7.setTextColor(Color.BLACK);
         sleep8.setTextColor(Color.BLACK);
-        sleep9ormore.setTextColor(Color.RED);
+        sleep9ormore.setTextColor(Color.WHITE);
         totalSleep = 9;
     }
 
