@@ -12,7 +12,10 @@
         <activity android:name=".NotesAll"></activity>
         <activity android:name=".MedsPage2" />
         <activity android:name=".MindPage4" />
+        <activity android:name=".MindPage5" />
         <activity android:name=".MindPage3" />
+        <activity android:name=".MindPage6" />
+        <activity android:name=".MindPage7" />
         <activity android:name=".MindPage2" />
         <activity android:name=".SleepPage2" />
         <activity android:name=".MealsPage3" />

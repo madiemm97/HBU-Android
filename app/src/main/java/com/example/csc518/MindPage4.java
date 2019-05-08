@@ -112,8 +112,7 @@ public class MindPage4 extends AppCompatActivity {
 
     public void onNextButtonPressed(View v)
     {
-        Intent i = new Intent(this, MindPage5.class);
-        this.startActivity(i);
+
         if(placesGone < 3)
         {
             Toast.makeText(MindPage4Activity, "Try going for a walk or calling up a friend!", Toast.LENGTH_LONG).show();
@@ -124,6 +123,9 @@ public class MindPage4 extends AppCompatActivity {
             Toast.makeText(MindPage4Activity, "Make sure you take some time to relax today!", Toast.LENGTH_LONG).show();
 
         }
+        Intent i = new Intent(this, MindPage5.class);
+        this.startActivity(i);
+
     }
 
 }
